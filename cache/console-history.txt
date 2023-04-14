@@ -1,0 +1,11 @@
+(await v2.price())
+var ethusdTx = await v2.retrievePrice('0x963D5e7f285Cc84ed566C486c3c1bC911291be38')
+(await v2.price())
+var ethusdTx = await v2.retrievePrice('0x143db3CEEfbdfe5631aDD3E50f7614B6ba708BA7')
+var v2 = await V2.attach("0x27F0de681717917E30Cd006b27FBF53a9f507A24")
+var V2 = await ethers.getContractFactory("PriceFeedTrackerV2")
+(await priceFeedTracker.retrievePrice())
+(await v1.retrievePrice())
+(await priceFeedTracker.getAdmin())
+const priceFeedTracker = await PriceFeedTracker.attach("0x27F0de681717917E30Cd006b27FBF53a9f507A24")
+const PriceFeedTracker = await ethers.getContractFactory("PriceFeedTracker");
